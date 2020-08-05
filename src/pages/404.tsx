@@ -3,12 +3,14 @@ import { PageProps } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
 const NotFoundPage: React.FC<PageProps> = () => (
   <Layout>
     <SEO />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>
+      <span>404</span>
+      <span>|</span>
+      <span>Not Found</span>
+    </h1>
   </Layout>
 )
 
