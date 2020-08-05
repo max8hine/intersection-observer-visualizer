@@ -1,0 +1,28 @@
+{
+	"eslint.enable": false,
+	"editor.formatOnSave": false,
+	"[html]": {
+		"editor.formatOnSave": true
+	},
+	"[css]": {
+		"editor.formatOnSave": true
+	},
+	"[javascript]": {
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.formatOnSave": true
+	},
+	"[graphql]": {
+		"editor.formatOnSave": true
+	},
+	"[json]": {
+		"editor.formatOnSave": true
+	},
+	"cSpell.words": [
+		"fullstop"
+	]
+}
