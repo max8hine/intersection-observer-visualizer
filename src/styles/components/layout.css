@@ -1,0 +1,57 @@
+:root {
+  --ratio: 1.4;
+  --body-padding: calc(1rem + (2 - 1) * ((100vw - 20rem) / (100 - 20)));
+}
+
+@screen lg {
+  :root {
+    --body-padding: 2rem;
+  }
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  padding: var(--body-padding);
+}
+
+.body {
+  @apply my-12 mx-auto;
+  max-width: 96rem;
+  min-height: 100%;
+}
+
+.box {
+  padding: var(--body-padding);
+
+  & > * {
+    color: inherit;
+  }
+}
+
+.box--invert {
+  @apply bg-charcoal text-baby-powder fill-baby-powder;
+}
+
+.section {
+  @apply my-12;
+}
+
+@screen md {
+  .section {
+    @apply my-24;
+  }
+}
+
+.main {
+  @apply my-8;
+}
+
+@screen lg {
+  .mail {
+    @apply: mt-32 mb-24;
+  }
+}

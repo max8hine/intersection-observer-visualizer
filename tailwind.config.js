@@ -87,6 +87,7 @@ module.exports = {
           "Noto Color Emoji",
         ],
         serif: ["Recursive", "Georgia", "Times New Roman", "Times", "serif"],
+        heading: ["Recursive", "Georgia", "Times New Roman", "Times", "serif"],
       },
       width: {
         half: "50%",

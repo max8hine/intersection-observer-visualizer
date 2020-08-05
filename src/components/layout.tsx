@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface Props {
@@ -18,14 +19,19 @@ const Layout: React.FC<Props> = ({ children }) => {
   `)
   const { author, siteUrl } = data.site.siteMetadata
   return (
-    <div>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href={siteUrl}>{author}</a>
-      </footer>
-    </div>
+    <>
+      <Helmet>
+        <body className="relative font-sans bg-grey-light text-base text-charcoal leading-base tracking-base min-h-screen js-body" />
+      </Helmet>
+      <div>
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href={siteUrl}>{author}</a>
+        </footer>
+      </div>
+    </>
   )
 }
 

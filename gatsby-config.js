@@ -11,7 +11,7 @@ const siteMetadata = {
     background_color: `#FFFFFF`,
     theme_color: `#1E2023`,
     display: `minimal-ui`,
-    icon: `src/images/icon/icon.png`,
+    icon: `src/images/icon.png`,
     // legacy: false,
   },
   google: {
@@ -45,8 +45,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: siteMetadata.manifest,
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss")("./tailwind.config.js"),
+          require("postcss-preset-env")({
+            features: {
+              "nesting-rules": true,
+            },
+          }),
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -61,6 +70,10 @@ module.exports = {
         host: siteMetadata.siteUrl,
         sitemap: `${siteMetadata.siteUrl}/sitemap.xml`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: siteMetadata.manifest,
     },
     // {
     //   resolve: `gatsby-plugin-google-analytics`,

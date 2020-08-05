@@ -1,0 +1,12 @@
+.default-enter {
+  @apply opacity-0 scale-95 translate-y-2 ease-out duration-500;
+}
+.default-enter-active {
+  @apply opacity-100 scale-100 translate-y-0;
+}
+.default-exit {
+  @apply opacity-100 scale-100 translate-y-0;
+}
+.default-exit-active {
+  @apply opacity-0 scale-95 translate-y-2 ease-out duration-500;
+}
