@@ -19,6 +19,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@types/react": "^16.9.44",
+    "@types/react-helmet": "^6.1.0",
     "prettier": "2.0.5"
   },
   "keywords": [
