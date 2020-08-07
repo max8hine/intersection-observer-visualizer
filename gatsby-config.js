@@ -33,6 +33,7 @@ const siteMetadata = {
 
 module.exports = {
   siteMetadata,
+  pathPrefix: "/intersection-observer-visualizer",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
