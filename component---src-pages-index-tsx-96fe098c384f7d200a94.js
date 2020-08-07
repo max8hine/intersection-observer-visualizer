@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{QeBL:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),o=n("9Dj+"),r=n("H8eV");t.default=function(){return l.a.createElement(o.a,null,l.a.createElement(r.a,{title:"Home"}),l.a.createElement("h1",{className:"font-serif"},"Hi people"),l.a.createElement("p",null,"Welcome to your new Gatsby site."),l.a.createElement("p",null,"Now go build something great."))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-96fe098c384f7d200a94.js.map
